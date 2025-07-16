@@ -41,11 +41,13 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/burger-hero.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/burger-hero.jpg') no-repeat center center/cover;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll; /* Mobilde fixed sorun çıkarabilir */
     overflow-x: hidden;
+    min-height: 100vh;
+    position: relative;
 }
 
 a {
@@ -343,7 +345,20 @@ footer {
     box-shadow: 0 0 3px rgba(0,0,0,0.3); /* Add shadow for better visibility */
 }
 
+/* Mobil için arkaplan ayarları */
 @media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .hero {
+        min-height: 60vh;
+        padding-top: 120px;
+    }
+    
     .hamburger {
         display: block;
     }
