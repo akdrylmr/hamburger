@@ -41,14 +41,56 @@ body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url('../images/burger-hero.jpg') no-repeat center center/cover;
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll; /* Mobilde fixed sorun çıkarabilir */
     overflow-x: hidden;
     min-height: 100vh;
     position: relative;
 }
+
+/* Arka plan için pseudo-element kullanıyoruz */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../images/burger-hero.jpg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    will-change: transform;
+}
+
+/* Ana içerik için */
+main {
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    backdrop-filter: blur(0);
+    transition: backdrop-filter 0.3s ease;
+}
+
+/* Sayfa bölümleri için stil */
+section {
+    padding: 5rem 0;
+    position: relative;
+}
+
+/* Hero bölümü için özel stil */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    z-index: 2;
+}
+
+/* Sayfa bölümleri için varsayılan stiller kaldırıldı */
+
+/* Hakkımızda sayfası için tüm stiller kaldırıldı */
 
 a {
     text-decoration: none;
@@ -347,12 +389,22 @@ footer {
 
 /* Mobil için arkaplan ayarları */
 @media (max-width: 768px) {
-    body {
+    body::before {
+        position: fixed;
         background-attachment: scroll;
         background-size: cover;
         background-position: center center;
-        background-repeat: no-repeat;
+        height: 100vh;
+        width: 100vw;
     }
+    
+    section {
+        padding: 3rem 0;
+    }
+    
+    /* Mobil görünüm için sayfa bölümü stilleri kaldırıldı */
+    
+    /* Mobilde Hakkımızda sayfası için özel stiller kaldırıldı */
     
     .hero {
         min-height: 60vh;
