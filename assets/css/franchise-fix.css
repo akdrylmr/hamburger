@@ -1,0 +1,134 @@
+/* Franchise page specific fixes */
+.requirements-image {
+    margin-top: 2rem; /* Üst boşluğu artırıyoruz */
+}
+
+.requirements-image img {
+    width: 95%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.requirements-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+/* FAQ Section */
+.faq-item {
+    border-color: #ddd !important;
+    color: #333;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.faq-question h3 {
+    color: #1a4b2c !important;
+    font-weight: 600 !important;
+}
+
+.faq-toggle {
+    color: #1a4b2c !important;
+    min-width: 24px;
+    text-align: center;
+}
+
+.faq-toggle:hover {
+    color: #0f2d1a !important;
+}
+
+.faq-answer p {
+    color: #444 !important;
+    line-height: 1.6 !important;
+}
+
+.faq-item.active .faq-question {
+    background-color: #f0f0f0 !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+/* Franchise Feature Emojis */
+.feature-emoji {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+}
+
+.franchise-feature:hover .feature-emoji {
+    transform: scale(1.1) rotate(5deg);
+    opacity: 0.9;
+}
+
+.franchise-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.franchise-feature {
+    text-align: center;
+    padding: 2rem;
+    background: transparent;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.franchise-feature:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* Footer adjustments */
+.footer-content {
+    padding: 0 2rem; /* Kenarlardan içeriye doğru boşluk ekliyoruz */
+}
+
+.footer-section {
+    padding: 0 1rem; /* Bölümler arasında da içerden boşluk */
+}
+
+/* Form elements */
+.franchise-form input,
+.franchise-form select,
+.franchise-form textarea {
+    border-color: #ccc !important;
+    background-color: #fff !important;
+    color: #333 !important;
+}
+
+.radio-group label {
+    color: #444 !important;
+}
+
+.submit-btn {
+    background-color: #1a3522 !important;
+    border: 2px solid #1a3522 !important;
+}
+
+.submit-btn:hover {
+    background-color: #142b1a !important;
+    border-color: #142b1a !important;
+}
+
+.franchise-requirements,
+.franchise-requirements::before,
+.franchise-form-section,
+.form-container,
+.step-content {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+.franchise-requirements::before {
+    display: none !important;
+}

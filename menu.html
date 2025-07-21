@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>the TAM Burger - Menü</title>
+  <meta name="description" content="the TAM Burger - Eşsiz lezzetlerimizle damak tadınıza hitap ediyoruz.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav aria-label="Ana menü">
+      <a href="index.html" class="logo">the TAM Burger</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="menu.html" class="active">Menü</a></li>
+        <li><a href="about.html">Hakkımızda</a></li>
+        <li><a href="franchise.html">Franchise</a></li>
+        <li><a href="contact.html">İletişim</a></li>
+      </ul>
+      <div class="hamburger" aria-label="Menüyü Aç/Kapat" tabindex="0">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Lezzetli Menümüz</h1>
+        <p>Özel soslarımız ve taze malzemelerimizle hazırlanan lezzetler</p>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <div class="container">
+        <div class="menu-categories">
+          <button class="category-btn active" data-category="beef-burgers">Köfte Burgerler</button>
+          <button class="category-btn" data-category="chicken-burgers">Tavuk Burgerler</button>
+          <button class="category-btn" data-category="kids-menu">Çocuk Menüsü</button>
+          <button class="category-btn" data-category="sides">Yan Ürünler</button>
+          <button class="category-btn" data-category="beverages">İçecekler</button>
+        </div>
+
+        <div class="menu-items">
+          <!-- Köfte Burgerler -->
+          <div class="menu-category active" id="beef-burgers">
+            <h2 class="category-title">Köfte Burgerler</h2>
+            <div class="menu-grid">
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Basic Burger">🍔</div>
+                  <span class="item-badge">En Çok Satan</span>
+                </div>
+                <div class="item-details">
+                  <h3>Basic Burger</h3>
+                  <p>%100 dana köftesi, marul, domates, soğan, turşu ve özel sos</p>
+                  <div class="item-price">₺490</div>
+                </div>
+              </div>
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Garden Burger">🥗</div>
+                </div>
+                <div class="item-details">
+                  <h3>Garden Burger</h3>
+                  <p>Dana köftesi, taze roka, domates, salatalık, avokado, özel baharatlı sos</p>
+                  <div class="item-price">₺490</div>
+                </div>
+              </div>
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Umami Burger">🍄</div>
+                </div>
+                <div class="item-details">
+                  <h3>Umami Burger</h3>
+                  <p>Dana köftesi, karamelize soğan, mantar, eritilmiş kaşar, özel umami sos</p>
+                  <div class="item-price">₺490</div>
+                </div>
+              </div>
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Smoky Burger">🔥</div>
+                </div>
+                <div class="item-details">
+                  <h3>Smoky Burger</h3>
+                  <p>Dana köftesi, füme pastırma, cheddar peyniri, soğan halkası, barbekü sos</p>
+                  <div class="item-price">₺490</div>
+                </div>
+              </div>
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Cheesy Burger">🧀</div>
+                  <span class="item-badge">Yeni</span>
+                </div>
+                <div class="item-details">
+                  <h3>Cheesy Burger</h3>
+                  <p>%100 dana köftesi, çift kaşar peyniri, cheddar, mozzarella, karamelize soğan, özel peynir sosu</p>
+                  <div class="item-price">₺520</div>
+                </div>
+              </div>
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="DIY Burger">✨</div>
+                </div>
+                <div class="item-details">
+                  <h3>DIY (Kendin Yap) Burger</h3>
+                  <p>Kendi burgerinizi oluşturun! Seçtiğiniz malzemelerle kendinize özel burger</p>
+                  <div class="item-price">₺490+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tavuk Burgerler -->
+          <div class="menu-category" id="chicken-burgers">
+            <h2 class="category-title">Tavuk Burgerler</h2>
+            <div class="menu-grid">
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Chicken Burger">🐔</div>
+                  <span class="item-badge">Özel</span>
+                </div>
+                <div class="item-details">
+                  <h3>Chicken Burger</h3>
+                  <p>Kızarmış tavuk fileto, marul, domates, soğan, turşu ve özel sos</p>
+                  <div class="item-price">₺450</div>
+                </div>
+              </div>
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Spicy Chicken">🌶️</div>
+                </div>
+                <div class="item-details">
+                  <h3>Spicy Chicken</h3>
+                  <p>Kızarmış tavuk fileto, acı biber, cheddar peyniri, soğan halkası, baharatlı sos</p>
+                  <div class="item-price">₺470</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Çocuk Menüsü -->
+          <div class="menu-category" id="kids-menu">
+            <h2 class="category-title">Çocuk Menüsü</h2>
+            <div class="menu-grid">
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Kids Burger">👶</div>
+                  <span class="item-badge">Çocuk</span>
+                </div>
+                <div class="item-details">
+                  <h3>Kids Burger</h3>
+                  <p>Küçük boy dana köftesi, marul, domates, özel sos</p>
+                  <div class="item-price">₺250</div>
+                </div>
+              </div>
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Kids Meal">🍟</div>
+                </div>
+                <div class="item-details">
+                  <h3>Kids Meal</h3>
+                  <p>Kids Burger + Kızarmış patates + Kola</p>
+                  <div class="item-price">₺350</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Yan Ürünler -->
+          <div class="menu-category" id="sides">
+            <h2 class="category-title">Yan Ürünler</h2>
+            <div class="menu-grid">
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Kızarmış Patates">🍟</div>
+                </div>
+                <div class="item-details">
+                  <h3>Kızarmış Patates</h3>
+                  <p>Adet: 100 gram</p>
+                  <div class="item-price">₺50</div>
+                </div>
+              </div>
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Soğan Halkası">🧅</div>
+                </div>
+                <div class="item-details">
+                  <h3>Soğan Halkası</h3>
+                  <p>Adet: 100 gram</p>
+                  <div class="item-price">₺60</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- İçecekler -->
+          <div class="menu-category" id="beverages">
+            <h2 class="category-title">İçecekler</h2>
+            <div class="menu-grid">
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Kola">🥤</div>
+                </div>
+                <div class="item-details">
+                  <h3>Kola</h3>
+                  <p>330 ml</p>
+                  <div class="item-price">₺30</div>
+                </div>
+              </div>
+              <div class="menu-item card">
+                <div class="item-image">
+                  <div class="icon-placeholder" aria-label="Limonata">🍋</div>
+                </div>
+                <div class="item-details">
+                  <h3>Limonata</h3>
+                  <p>330 ml</p>
+                  <div class="item-price">₺30</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>the TAM Burger</h3>
+        <p>Türkiye'nin en iyi burger zinciri</p>
+      </div>
+      <div class="footer-section">
+        <h3>Bağlantılar</h3>
+        <ul>
+          <li><a href="index.html">Ana Sayfa</a></li>
+          <li><a href="menu.html">Menü</a></li>
+          <li><a href="about.html">Hakkımızda</a></li>
+          <li><a href="franchise.html">Franchise</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Bizi Takip Edin</h3>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2024 the TAM Burger. Tüm hakları saklıdır.
+    </div>
+  </footer>
+  <script src="assets/js/components.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

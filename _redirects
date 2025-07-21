@@ -1,0 +1,8 @@
+# Enable clean URLs (for Netlify, Vercel, etc.)
+/* /index.html 200
+
+# Custom redirects
+/about /about.html 200
+/menu /menu.html 200
+/franchise /franchise.html 200
+/contact /contact.html 200
